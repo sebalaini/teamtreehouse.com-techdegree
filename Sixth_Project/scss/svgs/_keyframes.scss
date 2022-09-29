@@ -1,0 +1,57 @@
+/***************
+TEXT FILL
+***************/
+
+@keyframes fill_text {
+  100% {
+    fill: $tan;
+  }
+}
+
+@keyframes offset{
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill_pawn {
+  100% {
+    fill: $negroni;
+  }
+}
+
+@keyframes fill_logo_background {
+  100% {
+    fill: $twine;
+  }
+}
+
+
+
+/***************
+DOGS
+***************/
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2) rotate(-5deg);
+    -ms-transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2) rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes nav_hover {
+  100% {
+    transition: width;
+  }
+}

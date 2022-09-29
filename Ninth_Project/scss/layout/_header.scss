@@ -1,0 +1,154 @@
+/***************
+HEADER
+***************/
+
+header {
+	width: 100%;
+	height: 65px;
+	background: $violet;
+	position: fixed;
+	z-index: 100;
+}
+
+.logo {
+	@include mobile {
+		display: block;
+		width: 100px;
+		float: left;
+		margin-top: 12px;
+		padding: 10px;
+	}
+	@include tablet {
+		width: 120px;
+		margin-top: 7px;
+	}
+}
+
+
+/***************
+NAV
+***************/
+
+.main_nav {
+	@include mobile {
+		position: relative;
+		top: -50px;
+		right: 0;
+		display: block;
+		float: right;
+	}
+	@include mobile2 {
+		top: 0;
+	}
+}
+
+.main_nav,
+.left_nav {
+	li {
+		margin: 0 10px;
+		display: inline-block;		
+	}
+	li a {
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.profile_photo {
+	margin-right: 15px;
+}
+
+.notifications {
+	background: url("../img/icon_bell.svg") no-repeat center;
+	background-size: 30px 30px;
+	border-right: 2px solid $grey;
+}
+
+li.notifications a {
+	width: 45px;
+}
+
+li.profile {
+	background: url("../img/profile_photo.png") no-repeat center;
+	background-size: 30px 30px;
+	margin: 0;
+	border-radius: 100%;
+}
+
+li.name {
+	position: relative;
+	top: -9px;
+	padding-left: 10px;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+
+
+/***************
+LEFT NAV
+***************/
+
+.left_nav {
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	overflow-y: auto;
+	background: $light_violet;
+	margin-top: 20px;
+	padding-left: 0;
+}
+
+.left_nav	{
+	li {
+		position: relative;
+		left: 10px;
+		top: 35px;
+		height: 35px;
+		width: 35px;
+		margin: 30px auto;
+	}
+	li a {
+		width: 42px;
+		height: 34px;
+	}
+}
+
+.left_nav li:hover {
+	width: 50px;
+	left: 3px;
+	border-left: 3px solid $green;
+}
+
+#active {
+	width: 50px;
+	left: 3px;
+	border-left: 3px solid $green;
+}
+
+.dashboard {
+	background: url("../img/icon_dashboard.svg") no-repeat center;
+	background-size: 30px 30px;
+}
+
+.members {
+	background: url("../img/icon_members.svg") no-repeat center;
+	background-size: 30px 30px;
+}
+
+.visits {
+	background: url("../img/icon_visits.svg") no-repeat center;
+	background-size: 30px 30px;
+}
+
+.settings {
+	background: url("../img/icon_settings.svg") no-repeat center;
+	background-size: 30px 30px;
+}
+
+
+
+
+
+

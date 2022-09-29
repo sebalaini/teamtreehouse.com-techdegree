@@ -1,0 +1,500 @@
+/***************
+ALERT
+***************/
+
+.alert_div {
+	width: 100%;
+	text-align: center;
+}
+
+.not_circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background: $light_green;
+	display: inherit;
+	position:relative;
+	top: 0px;
+	left: 34px;
+}
+
+
+
+/***************
+SEARCH
+***************/
+
+.search {
+	margin-top: 50px;
+}
+
+.search_div {
+	@include mobile {
+		background-color: $light_grey;
+		width: 60%;
+		float: right;
+	}
+	@include tablet {
+		width: 80%;
+		height: 80px;
+	}
+}
+
+input[id="search"] {
+	@include mobile {
+		position: absolute;
+		right: 0;
+		width: 100px;
+		float: right;
+		margin-top: 27px;
+		margin-right: 20px;
+		background: url("../img/icon_search.png") no-repeat;
+		background-position: 75px 3px;
+		height: 30px;
+		border-radius: 10px;
+		background-color: $white;
+		border: 2px solid $light_grey;
+	}
+	@include tablet {
+		width: 300px;
+		margin-top: 33px;
+		background-position: 275px 3px;
+	}
+}
+
+input[id="search"]:hover {
+	@extend .hover;
+}
+
+input[id="search"]:focus {
+	@extend .focus;
+}
+
+
+
+/***************
+ALERT DIV
+***************/
+
+.alert {
+	display: none;
+	width: 95%;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: $light_violet;
+	@extend .border10;
+}
+
+
+
+/***************
+LINEAR CHART
+***************/
+
+.linear_chart {
+	width: 100%;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.btn_div {
+	@include mobile {
+		display: block;
+		width: 100%;
+	}
+	@include tablet {
+		float: right;
+		width: 400px;
+		padding-right: 30px;
+		padding-top: 15px;
+	}
+}
+
+#chart {
+	width: 95%;
+	height: 200px;
+}
+
+
+
+/***************
+BAR / PIE CHART
+***************/
+
+.barpie_chart {
+	@include mobile {
+		border: none;
+	}
+	@include tablet {
+		border-top: 2px solid $light_grey;
+		border-bottom: 2px solid $light_grey;
+	}
+}
+
+#barChart_div {
+	@include mobile {
+		border-right: none;
+	}
+	@include tablet {
+		border-right: 2px solid $light_grey;
+	}
+}
+
+#barChart_div,
+#pieChart_div {
+	@include mobile {
+		display: block;
+		width: 90%;
+		float: left;
+	}
+	@include tablet {
+		padding: 20px; 
+		padding-left: 40px;
+		width: 49.7%;
+	}
+}
+
+
+
+/***************
+SOCIAL DIV
+***************/
+
+#social_div {
+	display: block;
+	clear: both;
+	padding: 30px 0;
+}
+
+.social_ul {
+	@include mobile {
+		padding-left: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@include tablet {
+		padding-left: 60px;
+	}
+}
+
+.social_li {
+	@include mobile {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 90%;
+		height: 130px;
+		border-radius: 40px;
+		background: $light_grey;
+		margin: 10px;
+	}
+	@include mobile3 {
+		width: 75%;
+		margin-left: 10%;
+	}
+	@include tablet {
+		margin-left: 4%;
+		width: 40%;
+	}
+	@include desktop {
+		width: 27%;
+	}
+}
+
+svg {
+	display: block;
+	fill: $white;
+	width: 60px;
+}
+
+.social_div {
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
+	background: $violet;
+	position: relative;
+	top: 30px;
+	left: 10px;
+}
+
+#instagram {
+	position: relative;
+	top: 13px;
+	right: -3px;
+}
+
+circle {
+	fill: $violet;
+}
+
+
+
+/***************
+MEMBERS DIV AND ACTIVITY
+***************/
+
+#members {
+	@include mobile {
+		border: none;
+		margin-bottom: 20px;
+	}
+	@include tablet {
+		border-top: 2px solid $light_grey;
+		border-bottom: 2px solid $light_grey;
+		margin-bottom: 0;
+	}
+}
+
+.members_div {
+	@include mobile {
+		border-right: none;
+	}
+	@include tablet {
+		border-right: 2px solid $light_grey;
+	}
+}
+
+.members_div,
+.activity_div {
+	@include mobile {
+		float: left;
+		margin: 0;
+		width: 95%;
+	}
+	@include tablet {
+		width: 49.9%;
+		padding: 0 20px;
+	}
+}
+
+.activity_div {
+	@include mobile {
+		padding-top: 30px;
+	}
+	@include tablet {
+		padding-top: 0;
+	}
+}
+
+.members_table,
+.activity_table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+caption {
+	text-align: left;
+	padding: 10px 0 20px 20px;;
+	padding-bottom: 20px;
+}
+
+tr {
+	width: 100%;
+	height: 75px;
+	padding: 10px 0;
+	border-bottom: 2px solid $light_grey;
+}
+
+.last {
+	@include mobile {
+		border-bottom: 2px solid $light_grey;
+	}
+	@include tablet {
+		border-bottom: none;
+	}
+}
+
+.member_icon {
+	@include mobile {
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+	}
+	@include mobile2 {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+.social_member {
+	background: $violet;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+	margin-right: 12px;
+}
+
+.social_cell {
+	@include mobile {
+		display: none;
+	}
+	@include tablet {
+		display: table-cell;
+	}
+}
+
+
+/***************
+FORM DIV AND SETTING
+***************/
+
+.form_div,
+.settings_div {
+	@include mobile {
+		float: left;
+		margin: 0;
+		width: 95%;
+		padding-bottom: 30px;
+	}
+	@include tablet {
+		width: 49.9%;
+		padding: 0 20px 20px 20px;
+	}
+}
+
+.form_div {
+	@include tablet {
+		border-right: 2px solid $light_grey;
+	}
+}
+
+fieldset {
+	border: none;
+}
+
+input[class="search_member text-field valid"] {
+	width: 100%;
+	height: 30px;
+	margin: 10px;
+	margin-left: 5px;
+	@extend .border10;
+}
+
+input[class="search_member text-field valid"]:hover {
+	@extend .hover;
+}
+
+input[class="search_member text-field valid"]:focus {
+	@extend .focus;
+}
+
+.text-field {
+  -moz-box-sizing: border-box;
+  border: 1px solid $light_grey;
+  height: 40px;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.autocomplete-suggestion {
+  overflow: hidden;
+  width: 100%;
+  background-color: $white;
+  padding: 2px 5px;
+  white-space: nowrap;
+}
+
+.autocomplete-suggestions strong {
+	width: 100%;
+  color: black;
+  font-weight: normal;
+}
+
+.autocomplete-selected{
+  background: $light_violet;
+}
+
+textarea {
+	width: 100%;
+	height: 85px;
+	margin: 10px;
+	margin-left: 5px;
+	@extend .border10;
+}
+
+textarea:hover {
+	@extend .hover;
+}
+
+textarea:focus {
+	@extend .focus;
+}
+
+.error {
+	@include mobile {
+		display: none;
+		color: $white;
+		margin-left: 10px;
+		width: 98%;
+		height: 55px;
+		background: $light_violet;
+		position: relative;
+		z-index: 100;
+		top: -160px;
+		border-radius: 10px;
+		text-align: center;
+	}
+	@include mobile3 {
+		height: 40px;
+	}
+}
+
+.send_email,
+.set_profile {
+	@include mobile {
+		display: inline-block;
+		width: 68%;
+		float: left;
+		padding-left: 10px;
+	}
+	@include tablet {
+		width: 50%;
+	}
+}
+
+.message_set,
+.public {
+	@include mobile {
+		height: 35px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	@include tablet {
+		padding-left: 10px;
+	}
+}
+
+.timezone_div {
+	@include mobile {
+		margin-left: 4%;
+		margin-top: 10px;
+	}
+	@include tablet {
+		margin-left: 2%;
+	}
+}
+
+select[class="timezone"] {
+	width: 95%;
+	height: 30px;
+	border: 2px solid $light_grey;
+}
+
+.button_div {
+	@include mobile {
+		margin-top: 18px;
+		padding-left: 10%;
+	}
+	@include tablet {
+		padding-left: 15%;
+	}
+}
+
+
+
+
+
+

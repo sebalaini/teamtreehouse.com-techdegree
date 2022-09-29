@@ -1,0 +1,22 @@
+/***************
+LOGO
+***************/
+
+#logo {
+
+@include mobile {
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+	margin: 30px auto;
+	border-radius: 100%;
+  box-shadow: 0 6px 6px $darkgrey;
+}
+
+@include tablet {
+  margin-left: 5%;
+  margin-right: 5%;
+  float: right;
+}
+
+}

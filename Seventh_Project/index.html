@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sebastiano Laini's video</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body>
+  <div class="wrapper">
+    <header>
+
+    </header>        
+<div id="video-container">  
+  <video id="video">
+    <source src="video/video.mp4" type="video/mp4">
+    <source src="video/video.ogg" type="video/ogg">
+    <track label="English" kind="subtitles" srclang="en" src="video/captions.vtt">
+  </video>    
+
+<div id="video-controls"> 
+  <div id="buffered">
+    <span id="buffered-amount"></span>
+  </div>
+  <div id="progress">
+    <span id="progress-amount"></span>
+  </div>
+
+<div class="btn">
+  <div class="left-btn">  
+    <button type="button" id="play-pause"> </button>
+  
+    <div id="time-current" title="Current time"><span class="time">0:00</span></div>
+    <div id="time-duration" title="Duration"><span class="time">0:00</span></div>
+  </div>
+
+<div class="right-btn">
+      
+  <div id="volume">
+    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+    <button type="button" id="mute"> </button>
+  </div>
+
+    <button type="button" id="full-screen"> </button>    
+    
+<div id="speed-container"> 
+  <div id="speed-option">
+      <label title="Play speed 2x"><input class="option" type="radio" name="play-speed" id="speed20">2.0x</label><br/>
+      <label title="Play speed 1.5x"><input class="option" type="radio" name="play-speed" id="speed15">1.5x</label><br/>
+      <label title="Play speed 1x"><input class="option" type="radio" name="play-speed" id="speed10" checked>1.0x</label><br/>
+      <label title="Play speed 0.5x"><input class="option" type="radio" name="play-speed" id="speed05">0.5x</label>
+    </div>
+  <button type="button" id="speed"> </button>
+</div>
+
+    <button type="button" id="cc"> </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="video-transcript">
+  <p class="transcript">
+    <span id="ph01">Now that we've looked at the architecture of the internet, let's see how you might</span> 
+    <span id="ph02"> connect your personal devices to the internet inside your house.</span> 
+    <span id="ph03"> Well there are many ways to connect to the internet, and</span> 
+    <span id="ph04">most often people connect wirelessly.</span> 
+    <span id="ph05">Let's look at an example of how you can connect to the internet.</span> 
+    <span id="ph06">If you live in a city or a town, you probably have a coaxial cable for</span> 
+    <span id="ph07">cable Internet, or a phone line if you have DSL, running to the outside of</span> 
+    <span id="ph08">your house, that connects you to the Internet Service Provider, or ISP.</span> 
+    <span id="ph09">If you live far out in the country, you'll more likely have</span> 
+    <span id="ph10">a dish outside your house, connecting you wirelessly to your closest ISP, or</span> 
+    <span id="ph11">you might also use the telephone system.</span> 
+    <span id="ph12">Whether a wire comes straight from the ISP hookup outside your house, or</span> 
+    <span id="ph13">it travels over radio waves from your roof,</span> 
+    <span id="ph14">the first stop a wire will make once inside your house, is at your modem.</span> 
+    <span id="ph15">A modem is what connects the internet to your network at home.</span> 
+    <span id="ph16">A few common residential modems are DSL or</span>
+  </p>
+</div>
+  
+<footer class="foot">
+  <a href="https://es.linkedin.com/in/sebastiano-laini-a9735589" class="social linkedin">LinkedIn</a>
+  <a href="https://github.com/sebalaini" class="social github">Github</a>
+  <a href="https://twitter.com/SebastianoLaini" class="social twitter">Github</a>
+    <p class="copyright">&copy; 2016, Sebastiano Laini</p>
+  </footer>
+
+      <script src="js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/mejs.js" type="text/javascript" charset="utf-8"></script>
+    </div>
+  </body>
+</html>

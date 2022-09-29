@@ -1,0 +1,96 @@
+/***************
+HEADER
+***************/
+
+.header {
+
+@include mobile {
+  padding: $primary_space;
+  @include background_gradient;
+}
+
+@include tablet {
+  background: $white;
+}
+
+}
+
+
+.intro {
+
+@include mobile {
+  padding: $secondary_space * 2;
+}
+
+@include tablet {
+  margin-top: $secondary_space * 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@include desktop {
+  margin-top: $secondary_space * 2.5;
+}
+
+}
+
+
+
+/***************
+NAV
+***************/
+
+.nav {
+  text-align: center;
+  padding: $primary_space;
+  margin: $primary_space;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+
+  li {
+    margin: $primary_space * 3;
+} 
+  a {
+    padding: $primary_space * 2;
+}
+
+}
+
+
+@include tablet {
+
+.nav {
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid $grey;
+}
+
+}
+
+@include desktop {
+
+.nav {
+  align-content: space-around;
+  justify-content: flex-end;
+  border-bottom: hidden;
+}
+
+}
+
+
+.name {
+
+@include desktop {
+  float: left;
+  margin-top: 9px;
+  margin-left: 60px;
+}
+
+}
+
+
+
+

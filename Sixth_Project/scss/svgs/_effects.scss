@@ -1,0 +1,70 @@
+/***************
+NAV
+***************/
+
+#nav_heart,
+#nav_location,
+#nav_contact {
+  fill: $light_blue;
+}
+
+
+
+/***************
+LOGO
+***************/
+
+#logo_text {
+
+@include mobile {
+  display: none;
+}
+
+@include textlogo {
+  display: flex;
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  stroke: $tan;
+  stroke-width: 1;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  -webkit-animation: offset 5s linear forwards, fill_text .8s 1s forwards;
+  -moz-animation: offset 5s linear forwards, fill_text .8s 1s forwards;
+  -o-animation: offset 5s linear forwards, fill_text .8s 1s forwards;
+  animation: offset 5s linear forwards, fill_text .8s 1s forwards;
+}
+
+}
+
+
+#logo_paw {
+  stroke: $negroni;
+  stroke-width: 1;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: offset 3.5s linear forwards, fill_pawn 1.8s 2s forwards;
+}
+
+#logo_background {
+  -webkit-animation: fill_logo_background 2.1s 2.5s forwards;
+  -moz-animation: fill_logo_background 2.1s 2.5s forwards;
+  -o-animation: fill_logo_background 2.1s 2.5s forwards;
+  animation: fill_logo_background 2.1s 2.5s forwards;
+}
+
+
+
+/***************
+DOGS
+***************/
+
+#corgi-red:hover,
+#corgi-fawn:hover,
+#corgi-sable:hover,
+#corgi-blacktan:hover {
+  -webkit-animation: grow 1.2s .8s forwards;
+  -moz-animation: grow 1.2s .8s forwards;
+  -o-animation: grow 1.2s .8s forwards;
+  animation: grow 1.2s .8s forwards;
+}

@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+
+/**********
+GENERAL LAYOUT
+**********/
+
+h1,
+form {
+	max-width: 1000px;
+}
+
+label {
+	width: 20%;
+	float:left;
+	height: 55px;
+}
+
+.signup,
+.news,
+.contact {
+	background-color: #fff;
+}
+
+
+
+/**********
+INPUT LAYOUT
+**********/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+	width: 80%;
+}
+
+#zipcode {
+	width: 20%;
+	display: block;
+}
+label.other,
+label.newsletter {
+	width: 100%;
+	height: 30px;
+}
+
+#htmlnews,
+#cssnews,
+#javascriptnews,
+#pythonnews,
+#rubynews,
+#html,
+#plain_text {
+	width: auto;
+	float: left;
+	margin-top: 10px;
+}
+
+label.light {
+	width: 97%;
+	height: 30px;
+}
+
+textarea {
+	width: 100%;
+}
+
+}

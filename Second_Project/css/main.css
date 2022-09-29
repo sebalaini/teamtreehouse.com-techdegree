@@ -1,0 +1,186 @@
+/***************
+GENERAL
+***************/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+p {
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: 1em;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+  	color: black;
+  	font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/***************
+HEADER
+***************/
+
+.header {
+    padding: 2.5%;
+    background: -webkit-linear-gradient(#b3ffff, #fff);
+    background: -o-linear-gradient(#b3ffff, #fff);
+    background: linear-gradient(#b3ffff, #fff);
+}
+
+h1 {
+  	text-align: center;
+  	font-size: 2em;
+}
+
+#logo {
+  	display: block;
+  	max-width: 200px;
+    max-height: 200px;
+  	margin: 30px auto;
+  	border-radius: 100%;
+    box-shadow: 0 6px 6px #888;
+}
+
+p {
+  	text-align: center;
+  	margin: 10px auto;
+  	padding: 10px 5%;
+}
+
+.intro {
+    padding: 40px;
+}
+
+
+
+/***************
+NAV
+***************/
+
+.nav {
+  	text-align: center;
+  	padding: 10px;
+  	margin: 5px 0 20px;
+}
+
+.nav ul {
+  	list-style: none;
+}
+
+.nav li a {
+	display: block;
+  	padding: 12px;
+  	margin: 5px auto;
+}
+
+
+
+/***************
+BODY
+***************/
+
+img {
+  	max-width: 100%;  
+}
+
+h2 {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.gallery {
+  	padding: 0;
+  	list-style: none;
+}
+
+.gallery li {
+  	width: 80%;
+  	margin: 0 auto;
+  	text-align: center;
+  	padding-top: 20px;
+}
+
+.gallery li p {
+  	margin: 0;
+  	padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/***************
+EXPERIENCE
+***************/
+
+#experience {
+    clear: both;
+}
+
+#experience h2 {
+    padding: 20px;
+    margin: 50px 0 5px;
+}
+
+
+
+/***************
+CONTACT
+***************/
+
+#contact {
+	 clear: both;
+}
+
+#contact h2 {
+  	padding: 20px;
+}
+
+
+
+/***************
+FOOTER
+***************/
+
+#foot {
+    clear: both;
+}
+
+.foot-name {
+    float: left;
+}
+
+.top a {
+    float: right;
+  	padding: 5px;
+  	margin: 5px;
+}
+
+.phone a,
+.mail a {
+    padding: 10px;
+    font-weight: normal;
+}
+
+.foot-nav {
+    display: none;
+}
+

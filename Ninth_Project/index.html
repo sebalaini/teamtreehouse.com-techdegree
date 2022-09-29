@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sebastiano Laini's Web Inspector</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body>
+  <div id="wrapper">
+     
+  <header>
+    <a class="logo"><span class="bold">Web</span><span class="light">Check</span>&trade;</a> 
+        
+      <ul class="main_nav">
+        <li class="notifications"><a href="" class="not_btn"> <div class="not_circle"> </div> </a></li>
+        <li class="profile"><a></a></li>
+        <li class="name">Sebastiano Laini</li>
+      </ul>
+  </header>
+  
+     
+    <ul class="left_nav">
+      <li id="active" class="dashboard"><a href="index.html"></a></li>
+      <li class="members"><a href=""></a></li>
+      <li class="visits"><a href=""></a></li>
+      <li class="settings"><a href=""></a></li>
+    </ul>
+  
+  <main>
+    <div class="search">
+      <h1>Dashboard</h1>
+        <div class="search_div">
+          <form class="search_form">
+     
+          <label for="search"></label>
+          <input id="search" type="text" class="search" name="search" placeholder="Search">
+            
+      </form>
+    </div>   
+  </div>
+
+  <div class="alert_div">
+    
+    <div class="alert alert_info">
+      <p class="alert_p"><strong>Info.</strong> There are new notifications.</p>
+        <button type="button" class="close"> <img src="img/x.png" alt=""> </button>
+    </div>
+
+    <div class="alert" id="info_1">
+      <p class="alert_p"><strong>Info.</strong> There are new Members.</p>
+        <button type="button" class="close" id="close_1"> <img src="img/x.png" alt=""> </button>
+    </div>
+
+    <div class="alert" id="info_2">
+      <p class="alert_p"><strong>Info.</strong> There are new members activity.</p> 
+        <button type="button" class="close" id="close_2"> <img src="img/x.png" alt=""> </button>
+    </div>
+
+  </div>
+  
+  <div class="linear_chart">
+    <p class="traffic">TRAFFIC</p> 
+      <div class="btn_div">
+        <button type="button" class="chart_btn" id="hourly">Hourly</button>
+        <button type="button" class="chart_btn" id="daily">Daily</button>
+        <button type="button" class="chart_btn" id="weekly">Weekly</button>
+        <button type="button" class="chart_btn" id="monthly">Monthly</button>
+      </div>
+
+  <div id="chart" >
+    <canvas id="lineChart_weekly"></canvas>
+    <canvas id="lineChart_hourly"></canvas>
+    <canvas id="lineChart_daily"></canvas>
+    <canvas id="lineChart_monthly"></canvas>
+  </div>
+
+  </div>
+
+<div class="barpie_chart">
+
+  <div id="barChart_div">
+    <p class="dailyTraffic">DAILY TRAFFIC</p>
+      <canvas id="barChart"></canvas>
+  </div>
+  
+  <div id="pieChart_div">
+    <p class="mobileUsers">MOBILE USERS</p>
+      <canvas id="pieChart"></canvas>
+  </div>
+</div>
+
+  <div id="social_div">
+    
+    <p class="social">SOCIAL</p>
+    <ul class="social_ul">
+      <li class="social_li">
+        <div class="social_div">
+          <svg height="56" width="56" viewBox="-2 -2 56 56">
+            <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg></div>
+              <p class="text">FACEBOOK  <br>
+                <span class="number">3000</span></p>                
+      </li>
+      
+      <li class="social_li">
+        <div class="social_div">
+          <svg height="57" width="57" viewBox="-3 -2 32 32" xml:space="preserve">
+            <path d="M16.209,24.317c0,-0.237 0,-0.394 -0.064,-0.63c-0.063,-0.157 -0.063,-0.393 -0.126,-0.551c-0.063,-0.157 -0.126,-0.315 -0.189,-0.551c-0.127,-0.157 -0.19,-0.314 -0.253,-0.472c-0.063,-0.157 -0.189,-0.236 -0.315,-0.472c-0.127,-0.157 -0.253,-0.315 -0.316,-0.393c-0.063,-0.079 -0.189,-0.236 -0.379,-0.394c-0.189,-0.157 -0.316,-0.315 -0.379,-0.315c-0.063,0 -0.189,-0.157 -0.378,-0.314c-0.19,-0.158 -0.316,-0.315 -0.379,-0.315c-0.126,0 -0.316,0 -0.632,0c-0.441,0 -0.883,0 -1.262,0.079c-0.442,0.078 -0.884,0.157 -1.326,0.393c-0.442,0.157 -0.821,0.393 -1.199,0.708c-0.379,0.315 -0.632,0.63 -0.821,1.102c-0.189,0.472 -0.316,1.023 -0.316,1.652c0,0.709 0.127,1.338 0.442,1.81c0.316,0.551 0.695,0.945 1.137,1.259c0.441,0.315 0.947,0.551 1.452,0.709c0.505,0.157 1.01,0.236 1.515,0.236c0.505,0 0.947,-0.079 1.389,-0.158c0.441,-0.157 0.82,-0.315 1.199,-0.629c0.379,-0.236 0.694,-0.63 0.884,-1.102c0.189,-0.472 0.316,-1.023 0.316,-1.652ZM14.757,11.254c0,-0.63 -0.064,-1.259 -0.19,-1.967c-0.126,-0.709 -0.316,-1.338 -0.568,-1.968c-0.253,-0.629 -0.568,-1.18 -1.01,-1.573c-0.442,-0.394 -0.947,-0.63 -1.452,-0.63c-0.758,0 -1.326,0.315 -1.768,1.023c-0.442,0.708 -0.631,1.495 -0.631,2.518c0,0.472 0.063,0.944 0.126,1.495c0.063,0.551 0.253,1.023 0.442,1.574c0.189,0.551 0.442,1.023 0.695,1.416c0.252,0.394 0.568,0.787 0.946,1.023c0.379,0.236 0.758,0.394 1.2,0.394c0.758,0 1.326,-0.315 1.704,-0.944c0.316,-0.551 0.506,-1.338 0.506,-2.361ZM13.178,4.093l5.303,0l-1.641,1.18l-1.642,0c0.569,0.473 1.011,1.102 1.326,1.889c0.316,0.787 0.505,1.652 0.505,2.518c0,0.708 -0.063,1.416 -0.252,1.967c-0.19,0.551 -0.442,1.023 -0.695,1.417c-0.252,0.315 -0.505,0.708 -0.82,0.944c-0.253,0.315 -0.505,0.63 -0.695,0.944c-0.189,0.315 -0.252,0.63 -0.252,1.023c0,0.236 0.063,0.551 0.189,0.787c0.126,0.236 0.316,0.472 0.505,0.708c0.189,0.237 0.442,0.473 0.694,0.709c0.253,0.236 0.506,0.55 0.758,0.865c0.253,0.315 0.505,0.63 0.694,1.023c0.19,0.394 0.379,0.787 0.505,1.259c0.127,0.472 0.19,1.023 0.19,1.574c0,1.653 -0.568,3.069 -1.705,4.249c-1.199,1.338 -2.904,1.968 -5.113,1.968c-0.505,0 -0.947,-0.079 -1.452,-0.158c-0.505,-0.078 -1.01,-0.236 -1.452,-0.472c-0.505,-0.236 -0.947,-0.551 -1.326,-0.865c-0.379,-0.315 -0.694,-0.787 -0.947,-1.338c-0.189,-0.472 -0.316,-1.023 -0.316,-1.731c0,-0.63 0.127,-1.259 0.442,-2.046c0.253,-0.63 0.632,-1.181 1.137,-1.653c0.505,-0.472 1.136,-0.865 1.767,-1.102c0.632,-0.236 1.263,-0.393 1.894,-0.55c0.568,-0.079 1.2,-0.158 1.831,-0.236c-0.505,-0.866 -0.757,-1.574 -0.757,-2.282c0,-0.158 0,-0.237 0,-0.394c0,-0.079 0.063,-0.236 0.063,-0.315c0,-0.078 0.063,-0.157 0.126,-0.314c0.063,-0.158 0.063,-0.237 0.063,-0.315c-0.316,0.078 -0.631,0.078 -0.821,0.078c-1.199,0 -2.209,-0.472 -3.093,-1.495c-0.884,-1.023 -1.263,-2.203 -1.263,-3.698c0,-1.417 0.379,-2.676 1.137,-3.777c0.757,-1.023 1.704,-1.731 2.841,-2.046c0.757,-0.236 1.515,-0.315 2.272,-0.315ZM25.741,7.949l0,1.967l-3.093,0l0,3.856l-1.578,0l0,-3.856l-3.094,0l0,-1.967l3.094,0l0,-3.856l1.578,0l0,3.856l3.093,0Z"/></svg></div>
+              <p class="text">G. PLUS <br>
+                <span class="number">1500</span></p>
+      </li>
+      
+      <li class="social_li">
+        <div class="social_div">
+          <svg height="56" width="56" viewBox="-10 0 200 200">
+            <path d="M63.992,167.85l0,-90.884l-30.208,0l0,90.884l30.208,0ZM48.892,64.55c10.534,0 17.091,-6.979 17.091,-15.7c-0.196,-8.918 -6.557,-15.703 -16.891,-15.703c-10.333,0 -17.09,6.785 -17.09,15.703c0,8.722 6.555,15.7 16.693,15.7l0.197,0Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M80.712,167.85l30.208,0l0,-50.754c0,-2.716 0.196,-5.43 0.994,-7.371c2.184,-5.428 7.154,-11.049 15.499,-11.049c10.931,0 15.304,8.335 15.304,20.552l0,48.622l30.206,-0.001l0,-52.112c0,-27.916 -14.903,-40.905 -34.778,-40.905c-16.296,0 -23.451,9.109 -27.426,15.313l0.202,0l0,-13.181l-30.208,0c0.396,8.528 0,90.884 0,90.884l-0.001,0.002Z" style="fill:#fff;fill-rule:nonzero;"/></svg></div>
+            <p class="text">LINKEDIN <br>
+                <span class="number">2000</span></p>
+      </li>
+      
+      <li class="social_li">
+        <div class="social_div">
+          <svg height="50" width="50" viewBox="-90 -150 700 700">
+            <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411    c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513    c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101    c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104    c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194    c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485    c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" fill="#fff"/></svg></div>
+              <p class="text">TWITTER <br>
+                <span class="number">4000</span></p>
+      </li>
+      
+      <li class="social_li">
+        <div class="social_div">
+          <svg id="instagram" height="45" width="45" viewBox="0 0 31 36">
+            <path style="fill:#fff;" d="M23.128,31.059H7.931C3.558,31.059,0,27.5,0,23.127V7.93C0,3.557,3.558,0,7.931,0h15.197 c4.373,0,7.931,3.557,7.931,7.93v15.197C31.059,27.5,27.501,31.059,23.128,31.059z M7.931,1.774c-3.395,0-6.156,2.761-6.156,6.155 v15.197c0,3.395,2.762,6.156,6.156,6.156h15.197c3.395,0,6.155-2.762,6.155-6.156V7.93c0-3.395-2.761-6.155-6.155-6.155H7.931z"/>
+            <path style="fill:#fff;" d="M30.171,11.654H19.232c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.397-0.888,0.888-0.888h10.938 c0.49,0,0.888,0.397,0.888,0.888C31.059,11.256,30.661,11.654,30.171,11.654z"/>
+            <path style="fill:#fff;" d="M11.597,11.654H0.887C0.397,11.654,0,11.256,0,10.767c0-0.49,0.397-0.888,0.887-0.888h10.71 c0.49,0,0.888,0.397,0.888,0.888C12.484,11.256,12.087,11.654,11.597,11.654z"/>
+            <path style="fill:#fff;" d="M15.529,22.45c-3.816,0-6.922-3.104-6.922-6.921c0-3.817,3.105-6.922,6.922-6.922 c3.816,0,6.921,3.104,6.921,6.922C22.45,19.346,19.346,22.45,15.529,22.45z M15.529,10.382c-2.838,0-5.148,2.31-5.148,5.148 s2.31,5.146,5.148,5.146c2.838,0,5.146-2.308,5.146-5.146S18.367,10.382,15.529,10.382z"/>
+            <path style="fill:#fff;" d="M25.557,9.361h-3.993c-0.49,0-0.888-0.397-0.888-0.887V4.48c0-0.49,0.398-0.887,0.888-0.887h3.993 c0.49,0,0.887,0.397,0.887,0.887v3.994C26.443,8.965,26.047,9.361,25.557,9.361z M22.45,7.586h2.219V5.368H22.45V7.586z"/>
+            <path style="fill:#fff;stroke:#fff;stroke-width:1.7748;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d=" M19.232,10.767"/></svg></div>
+              <p class="text">INSTAGRAM <br>
+                <span class="number">800</span></p>
+      </li>
+    </ul>
+  </div>
+
+<div id="members">  
+  <div class="members_div">
+
+     <table class="members_table">
+       <caption>NEW MEMBERS</caption>   
+            
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar1.jpg" alt="Anneke Lieve's photo">
+              </th>
+            <td>
+              <span class="member_name">Anneke Lieve</span> <br> 
+                <a href="mailto:annekelieve@icloud.com">annekelieve@icloud.com</a>
+              </td>
+            <td>06/26/16</td>
+        </tr>
+             
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar2.jpg" alt="Martin Kylian's photo">
+              </th>
+            <td>
+              <span class="member_name">Martin Kylian</span> <br> 
+                <a href="mailto:martinkylian@gmail.com">martinkylian@gmail.com</a>
+              </td>
+            <td>06/24/16</td>
+        </tr>
+             
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar3.jpg" alt="Shun Xiulan's photo">
+              </th>
+            <td>
+              <span class="member_name">Shun Xiulan</span> <br> 
+                <a href="mailto:shunxiulan@outlook.com">shunxiulan@outlook.com</a>
+              </td>
+            <td>06/21/16</td>
+        </tr>
+            
+        <tr class="last">
+          <th>
+            <img class="member_icon" src="img/avatar4.jpg" alt="Finley Malcolm's photo">
+              </th>
+            <td>
+              <span class="member_name">Finley Malcolm</span> <br> 
+                <a href="mailto:finleymalcolm@gmail.com">finleymalcolm@gmail.com</a>
+              </td>
+            <td>06/18/16</td>
+        </tr>
+      </table>
+  </div>
+
+   <div class="activity_div">
+
+     <table class="activity_table">
+       <caption>RECENT ACTIVITY</caption>   
+            
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar1.jpg" alt="Anneke Lieve's photo">
+              </th>
+            <td>
+              <span class="member_name">Anneke Lieve retweet you post</span> <br> 
+                <span class="activity_time">4 hours ago</span>
+              </td>
+            <td class="social_cell">
+              <div class="social_member">
+                <svg height="40" width="40" viewBox="0 -150 700 700">
+              <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411    c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513    c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101    c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104    c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194    c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485    c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" fill="#fff"/></svg></div>
+            </td>
+          <td class="arrow"> > </td>
+        </tr>
+             
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar4.jpg" alt="Finley Malcolm's photo">
+              </th>
+            <td>
+              <span class="member_name">Finley Malcolm chenge is status</span> <br> 
+                <span class="activity_time">7 hours ago</span>
+              </td>
+            <td class="social_cell">
+              <div class="social_member">
+                <svg height="50" width="50" viewBox="5 0 56 56">
+              <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg></div>
+            </td>
+          <td class="arrow"> > </td>
+        </tr>
+             
+        <tr>
+          <th>
+            <img class="member_icon" src="img/avatar3.jpg" alt="Shun Xiulan's photo">
+              </th>
+            <td>
+              <span class="member_name">Shun Xiulan like your tweet</span> <br> 
+                <span class="activity_time">19 hours ago</span>
+              </td>
+            <td class="social_cell">
+              <div class="social_member">
+                <svg height="40" width="40" viewBox="0 -150 700 700">
+              <path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411    c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513    c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101    c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104    c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194    c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485    c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" fill="#fff"/></svg></div>
+            </td>
+          <td class="arrow"> > </td>
+        </tr>
+            
+        <tr class="last">
+          <th>
+            <img class="member_icon" src="img/avatar2.jpg" alt="Martin Kylian's photo">
+              </th>
+            <td>
+              <span class="member_name">Martin Kylian commented on your facebook's post</span> <br> 
+                <span class="activity_time">1 day ago</span>
+              </td>
+             <td class="social_cell">
+              <div class="social_member">
+                <svg height="50" width="50" viewBox="5 0 56 56">
+              <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg></div>
+            </td>
+          <td class="arrow"> > </td>
+        </tr>
+      </table>
+  </div>
+</div>
+            
+  <div class="form_div">
+      
+    <form action="index.html" method="post" id="msg_user">
+      <fieldset>
+        <legend>MESSAGE USER</legend>
+          
+          <label for="search_member"></label>
+            <input type="text" class="search_member text-field valid" id="search_member" autocomplete="off" name="search_member" value="" placeholder="Search for User">
+                
+          <label for="contact_message"></label>
+            <textarea class="user_message" id="contact_message" name="message" placeholder="Message for User"></textarea>
+                   
+          <button id="send" type="button">SEND</button>
+      
+        </fieldset>     
+      </form>
+      
+      <div class="error"> 
+        <span class="error_span"> </span> 
+      </div>
+  
+  </div>
+  
+  <div class="settings_div">
+
+    <p class="setting">SETTINGS</p>
+    
+    <div class="message_set">
+        <p class="send_email">Send Email Notifications</p>
+        
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch" checked>
+            <label class="onoffswitch-label" for="onoffswitch" onclick="">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            <a></a>
+          </label>
+        </div>
+    </div>  
+    
+    <div class="public">
+
+        <p class="set_profile">Set profile to public</p>
+          
+          <div class="onoffswitch2">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch2-checkbox" id="onoffswitch2" checked>
+              <label class="onoffswitch2-label" for="onoffswitch2" onclick="">
+                <span class="onoffswitch2-inner"></span>
+                <span class="onoffswitch2-switch"></span>
+            </label>
+          </div>
+              
+          <div class="timezone_div">
+            <select class="timezone">
+              <option value="0" disabled selected>Select Timezone</option>
+              <option value="1">(GMT-1:00) Further-western European Time</option>
+              <option value="2">(GMT 00:00) Western European Time</option>
+              <option value="3">(GMT+01:00) Central European Time</option>
+              <option value="4">(GMT+02:00) Eastern European Time</option>
+              <option value="5">(GMT+03:00) Further-eastern European Time</option>
+              <option value="6">(GMT+04:00) Georgia Time</option>
+              <option value="7">(GMT+05:00) West Kazakhstan Time</option>
+            </select>
+          </div>
+                
+        </div>
+          <div class="button_div">
+            
+            <button id="save" type="button">SAVE</button> 
+            <button id="cancel" type="button">CANCEL</button>
+            
+          </div>
+
+    </div>
+  </main>
+</div>
+
+    <script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.autocomplete.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>  
+
+  </body>
+</html>

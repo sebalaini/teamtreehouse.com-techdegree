@@ -1,0 +1,39 @@
+/***************
+MEDIA QUERIES
+***************/
+
+$mobile-width: 318px;
+$mobile-width2: 371px;
+$mobile-width3: 395px;
+$tablet-width: 820px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile2 {
+  @media (min-width: #{$mobile-width2}) {
+    @content;
+  }
+}
+
+@mixin mobile3 {
+  @media (min-width: #{$mobile-width3}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

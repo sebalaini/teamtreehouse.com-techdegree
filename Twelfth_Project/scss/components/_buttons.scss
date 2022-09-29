@@ -1,0 +1,35 @@
+/***************
+BUTTON
+***************/
+
+.button {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px auto;
+	background: $blue;
+	border: none;
+	border-radius: 10px;
+	color: $white;
+}
+
+.repo {
+	@include mobile {
+		display: none;
+	}
+	@include tablet {
+		display: inline-block;
+	}
+}
+
+
+/* button:hover {
+	background: $light_blue;
+	-webkit-box-shadow: 3px 3px 3px 1px rgba(255,255,255,0.6);
+	-moz-box-shadow: 3px 3px 3px 1px rgba(255,255,255,0.6);
+	box-shadow: 3px 3px 3px 1px rgba(255,255,255,0.6);	
+} */
+
+

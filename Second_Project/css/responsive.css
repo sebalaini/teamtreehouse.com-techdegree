@@ -1,0 +1,192 @@
+@media screen and (min-width: 768px) {
+
+
+
+/***************
+HEADER
+***************/
+
+#logo {
+  	display: block;
+  	margin-left: 5%;
+  	margin-right: 5%;
+  	float: right;
+}
+
+.header {
+    margin-bottom: 15%;
+    background: #fff;
+}
+
+.intro {
+    margin-top: 7%;
+}
+
+
+
+/***************
+NAV
+***************/
+
+.nav {
+  	text-align: center;
+  	padding: 10px 0;
+  	margin: 20px 0 0;
+    border-bottom: 2px solid grey;
+}
+
+.nav ul {
+  	list-style: none;
+  	margin: 0 10px;
+  	padding: 0;
+}
+
+.nav li {
+  	display: inline-block;
+}
+
+.nav a {
+  	font-weight: 800;
+  	padding: 15px 10px;
+}
+
+
+
+/***************
+GALLERY
+***************/
+
+.gallery {
+  	padding: 0 auto;
+  	list-style: none;
+}
+
+.gallery li {
+  	float: left;
+  	width: 45%;
+  	margin: 2.5%;
+}
+
+.gallery li a p {
+  	margin: 0;
+  	padding: 5%;
+}
+
+.gallery > li {
+    height: 400px; 
+}
+
+
+
+/***************
+FOOT AND FOOT-NAV
+***************/
+
+footer {
+    border-top: 2px solid grey;
+}
+
+#foot {
+    padding: 0 2.5%;
+}
+
+.foot-nav {
+	 display: block;
+  	text-align: right;
+  	padding: 10px 0;
+  	margin: 20px 0 0;
+}
+
+.foot-nav ul {
+  	list-style: none;
+  	margin: 0 10px;
+  	padding: 0;
+}
+
+.foot-nav li {
+  	display: inline-block;
+  	margin-bottom: 10px;
+}
+
+.foot-nav a {
+  	font-weight: 800;
+  	padding: 15px 10px;
+}
+
+.top a {
+	 display: none;
+}
+
+.foot-name {
+	 float: left;
+	 margin-top: 38px;
+	 padding-left: 0;
+}
+
+#contact {
+    padding-bottom: 50px;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+/***************
+HEADER y NAV
+***************/
+
+.name {
+  	float: left;
+  	margin-top: 25px;
+}
+
+.nav {
+  	text-align: right;
+  	margin-top: 10px;
+    border-bottom: hidden;
+}
+
+
+
+/***************
+GALLERY
+***************/
+
+.gallery {
+  	padding: 0 -2.5;
+  	list-style: none;
+}
+
+.gallery li {
+  	float: left;
+  	width: 28.333%;
+  	margin: 2.5%;
+}
+
+.gallery li a p {
+  	margin: 0;
+  	padding: 5%;
+}
+
+.gallery > li {
+    height: 320px; 
+}
+
+
+/***************
+FOOTER
+***************/
+
+.foot-name {
+  	float: left;
+  	margin-top: 38px;
+}
+
+footer {
+    border-top: hidden;
+}
+
+}
+

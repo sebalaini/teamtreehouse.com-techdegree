@@ -1,0 +1,141 @@
+/***************
+VIDEO
+***************/
+
+video,
+#video-container {
+	display: block;
+	position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#video-controls {
+	max-width: 100%;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+	display: none;
+}
+
+#video-container:hover .btn {
+	display: block;
+}
+
+
+
+/***************
+TIME BAR
+***************/
+
+#buffered:hover,
+#progress:hover {
+	cursor: pointer;
+}
+
+#buffered {
+  position: relative;
+}
+
+#buffered-amount {
+  display: block;
+  height: 6px;
+  background-color: $grey;
+  width: 0;
+}
+
+#progress {
+  position: relative;
+  top: -6px;
+}
+
+#progress-amount {
+  display: block;
+  height: 6px;
+  background-color: $orange;
+  width: 0;
+}
+
+#video-container:hover #progress-amount {
+	height: 12px;
+}
+
+#video-container:hover #progress {
+	top: -12px;
+}
+
+#video-container:hover #buffered-amount {
+	height: 12px;
+}
+
+/***************
+VIDEO CONTROLS
+***************/
+
+.left-btn,
+.right-btn {
+	display: inline-block;
+}
+
+.left-btn {
+	float: left;
+	width: 140px;
+}
+
+.right-btn {
+
+	@include mobile {
+		width: 130px;
+		float: right;
+	}
+
+	@include tablet {
+		width: 155px;
+	}
+}
+
+.time {
+	margin: 1px;
+	padding: 1px;
+	width: 50px;
+}
+
+#time-current,
+#time-duration {
+	display: inline-block;
+	margin-bottom: 5px;
+	color: $white;
+}
+
+#volume,
+#speed-container {
+	display: inline-block;
+}
+
+#volume:hover #volume-bar {
+	display: inline-block;
+}
+
+
+
+#speed-container:hover #speed-option {
+	display: initial;
+}
+
+#speed-option {
+	display: none;
+	position: absolute;
+	height: 20px;
+	right: 40px;
+	bottom: 92px;
+}
+
+
+

@@ -1,0 +1,67 @@
+/***************
+GENERAL
+***************/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;  
+}
+
+
+
+/***************
+WRAPPER
+***************/
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+/***************
+GALLERY
+***************/
+
+.gallery {
+  display: -webkit-flex;
+  display: flex;
+	padding: 5px;
+	margin: 5%;
+	max-width: 90%;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.gallery li {
+	
+@include mobile {
+	max-width: 90%;
+	flex: 0 90%;
+	-webkit-flex: 0 90%;
+  margin: 2.5%;
+}
+
+@include tablet {
+	max-width: 40%;
+	flex: 0 40%;
+	-webkit-flex: 0 40%;
+	margin: 2.5%
+}
+
+@include desktop {
+	max-width: 28.333%;
+	flex: 1 28.333%;
+	-webkit-flex: 1 28.333%;
+	margin: 2.5%
+}
+
+}
+

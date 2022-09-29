@@ -1,0 +1,85 @@
+/***************
+GENERAL
+***************/
+
+p {
+	font-family: $primary_font;
+	font-size: $primary_size;
+	color: $black;
+	@include center;
+  padding: 10px 5%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+h1 {
+  @include center;
+  font-family: $tertiary_font;
+  font-size: $tertiary_size;
+}
+
+h2 {
+	clear: both;
+	font-family: $secondary_font;
+	font-size: $secondary_size;
+	font-weight: 900;
+	@include center;
+	padding: 5px 0;
+}
+
+
+
+/***************
+EXPERIENCE
+***************/
+
+#gallery {
+
+@include tablet {
+	margin-top: $secondary_space * 2;
+	}
+
+@include desktop {
+	margin-top: $secondary_space * 3;
+}
+
+}
+
+
+
+/***************
+EXPERIENCE
+***************/
+
+#experience {
+	@extend %prim_pad_marg;
+}
+
+#experience h2 {
+	@extend %prim_pad_marg;
+}
+
+
+
+/***************
+CONTACT
+***************/
+
+#contact {
+  @extend %prim_pad_marg;
+}
+
+#contact h2 {
+	@extend %prim_pad_marg;
+}
+
+

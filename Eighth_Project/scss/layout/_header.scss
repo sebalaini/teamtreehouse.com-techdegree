@@ -1,0 +1,105 @@
+/***************
+HEADER
+***************/
+
+header {
+  @include mobile {
+    text-align: center;
+    padding-top: 60px;
+    height: 300px;
+  }
+  @include tablet {
+    height: 400px;
+  }
+}
+
+#banner {
+  @include mobile {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 300px;
+  }
+  @include tablet {
+    height: 420px;
+  }
+}
+
+header h1 {
+  @include mobile {
+    font-size: 2em;
+    position: relative;
+    top: -240px;
+    color: $red;
+  }
+  @include tablet {
+    top: -370px;
+    font-size: 5em;
+  }
+}
+
+header p {
+  @include mobile {
+    position: relative;
+    font-size: 1.4em;
+    top: -260px;
+  }
+  @include tablet {
+    font-size: 3em;
+    top: -420px;
+  }
+}
+
+
+
+/***************
+NAV
+***************/
+
+.main-nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+}
+
+
+.nav {
+  @include mobile{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @include tablet {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+
+.nav a {
+  transition: all .5s;
+}
+
+
+
+

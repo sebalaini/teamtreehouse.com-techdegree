@@ -1,0 +1,40 @@
+/***************
+FILL
+***************/
+
+#corgi-red-face, #corgi-red-left-ear, #corgi-red-right-ear,
+#corgi-sable-eyebrows, 
+#blacktan-eyebrows, #blacktan-ears {
+  fill: $twine;
+}
+
+#corgi-red-eyes-nose, #corgi-red-eyebrows,
+#fawn-eyes-nose,
+#sable-nose-eyes, 
+#blacktan-eyes-nose {
+  fill: $cod_grey;
+}
+
+#corgi-red-beak, 
+#fawn-beak,
+#sable-beak, 
+#blacktan-beak {
+  fill: $alice_blue;
+}
+
+#fawn-left-ear, #fawn-right-ear, #fawn-face {
+  fill: $manhattan;
+}
+
+
+#fawn-eyebrows{
+  fill: $negroni_2;
+}
+
+#sable-face, #sable-left-ear, #sable-right-ear {
+  fill: $korma;
+}
+
+#blacktan-face{
+  fill:$fiord;
+}

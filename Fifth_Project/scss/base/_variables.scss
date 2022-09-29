@@ -1,0 +1,35 @@
+/***************
+FONT
+***************/
+
+$primary_font: 'Open Sans', sans-serif;
+$secondary_font: 'Lato', sans-serif;
+$tertiary_font: 'Lobster', sans-serif;
+$primary_size: 1em;
+$secondary_size: 1.4em;
+$tertiary_size: 2em;
+
+
+
+/***************
+COLOR
+***************/
+
+$black: #000;
+$white: #fff;
+$light_blue: #b3ffff;
+$grey: #808080;
+$darkgrey: darken( $grey, 30% );
+
+
+/***************
+SPACES
+***************/
+
+$primary_space: 5px;
+$secondary_space: 20px;
+
+%prim_pad_marg {
+  padding: $primary_space;
+  margin: $primary_space;
+}

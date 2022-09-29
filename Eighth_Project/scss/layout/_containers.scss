@@ -1,0 +1,202 @@
+/***************
+CONTAINER
+***************/
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: $red;
+}
+
+.card {  
+  @include mobile {
+    margin: 30px;
+    padding: 30px 40px;
+    text-align: left;
+    border-top: 4px solid $red;
+    clear: both;
+  } 
+  @include tablet {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+
+.photo {
+  @include mobile {
+    display: block;
+    width: 200px;
+    height: 0%;
+    margin: 0 auto;
+} 
+ @include tablet {
+    width: 30%;
+    margin: 20px 30px;
+  }
+}
+
+.information {
+  @include mobile {
+    width: 100%;
+    text-align: center;
+  }
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.heading{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #781125;
+  margin-top: 10px;
+}
+
+.flex {
+  @include tablet {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+
+
+/***************
+TOUR
+***************/
+
+.heading{
+  display: inline-block;
+  margin: 0;
+}
+
+.pick{
+  width: 40px;
+  height: 0%;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+}
+
+#tourdates {
+  text-align: center;
+}
+
+table {
+  @include mobile {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  @include tablet {
+    width: 500px;
+  }
+}
+
+caption {
+  font-size: 1.3em;
+}
+
+thead {
+  background: $blue;
+}
+
+th {
+  color: $grey;
+}
+
+tr {
+  height: 35px;
+}
+
+
+
+/***************
+SURVEY
+***************/
+
+.SurveyPhoto {
+  @include mobile {
+    width: 60%;
+    padding: 10px;
+  }
+  @include tablet {
+    width: 40%;
+  }
+}
+
+label {
+  margin: 5px;
+  display: inline-block;
+}
+
+label.clearfix {
+  @include mobile {
+    margin-top: 20px;
+    display: block;
+  }
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+select,
+textarea {
+  display: block;
+  margin: 10px 5px 5px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newsletter{
+  text-align: right;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+textarea#favouriteSong:focus,
+input:focus,
+input[type="radio"]:focus,
+button:focus {
+  border: 2px solid $blue;
+  background: $red;
+}
+
+#selectalbum,
+#entername,
+#entermail,
+#repeatmail,
+#subbutton {
+  display: none;
+}
+
+
+
+
+
+

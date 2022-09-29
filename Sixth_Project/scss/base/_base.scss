@@ -1,0 +1,93 @@
+/***************
+GENERAL
+***************/
+
+#wrapper {
+  max-width: 960px;
+  background: $white;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  font-family: $primary_font;
+  font-weight: $secondary_size;
+  color: $black;
+  background: url("../svgs/background.svg") $light_grey;
+  background-size: 50px 50px;
+}
+
+#logo{
+   height: 120px;
+   width: 140px;
+ }
+
+p {
+
+  @include mobile {
+    max-width: 350px;
+    margin: 35px auto 0;
+    padding: 0 10px 0;
+    line-height: 2em;
+    text-align: left;
+  }
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $light_blue;
+  font-weight: $primary_size;
+}
+
+main {
+  padding-top: 50px;
+}
+
+#h1_text {
+
+  @include mobile {
+    color: $light_brown;
+  }
+
+  @include textlogo {
+    display: none;
+  }
+}
+  
+h2 {
+  font-size: 28px;
+}
+
+span {
+  color: $light_brown;
+}
+
+
+/***************
+NAV
+***************/
+
+ul {
+  list-style-type: none;
+}
+
+
+.nav_hover { 
+  transform: perspective(350px) translateZ(80px);
+}
+
+li:hover a {
+  color: $blue;
+  @extend .nav_hover;
+}
+
+li:hover path {
+  fill: $blue;
+  @extend .nav_hover;
+}
+
+

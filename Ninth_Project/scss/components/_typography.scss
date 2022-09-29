@@ -1,0 +1,260 @@
+/***************
+GENERAL
+***************/
+
+body,
+h1,
+p {
+	color: $grey;
+}
+
+li {
+	color: $white;
+}
+
+/***************
+LOGO
+***************/
+
+.logo {
+	color: $white;
+}
+
+.bold {
+	@include mobile {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	@include mobile3 {
+		font-size: 1.6em;
+	}
+}
+
+.light {
+	@include mobile {
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+	@include mobile3 {
+		font-size: 1em;	
+	}
+}
+
+
+
+/***************
+HEADER
+***************/
+
+li.name {
+	@include mobile {
+		font-size: 0.8em;
+	}
+	@include mobile3 {
+		font-size: 1em;
+	}
+}
+
+.search h1 {
+	@include mobile {
+		float: left;
+		font-size: 1em;
+		padding-left: 10px;
+		margin-top: 30px;
+	}
+	@include mobile3 {
+		padding-left: 25px;
+		font-size: 1.5em;
+	}
+	@include tablet{
+		padding-left: 20px;
+	}
+}
+
+
+
+/***************
+ALERT DIV
+***************/
+
+.alert {
+	@include mobile {
+		font-size: 0.7em
+	}
+	@include mobile3 {
+		font-size: 1em;
+	}
+}
+
+.alert_p {
+	@include mobile {
+		display: inline-block;
+		position: relative;
+		top: -3px;
+		color: $white;
+	}
+	@include mobile2 {
+		top: -10px
+	}
+}
+
+
+
+/***************
+LINEAR CHART
+***************/
+
+
+p.traffic {
+	@include mobile {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	@include tablet {
+		padding-left: 40px;
+		width: 100px;
+		float: left;
+	}
+}
+
+
+
+/***************
+BAR / PIE CHART
+***************/
+
+p.dailyTraffic,
+p.mobileUsers {
+	@include mobile {
+		text-align: center;
+	}
+	@include tablet {
+		text-align: left;
+	}
+}
+
+
+/***************
+SOCIAL DIV
+***************/
+
+.social {
+	@include mobile {
+		text-align: center;
+	}
+	@include tablet {
+		text-align: left;
+		padding-left: 40px;
+	}
+}
+
+.text {
+	@include mobile {
+		color: $violet;
+		display: inline-block;
+		width: 60%;
+		text-align: left;
+		font-size: 1em;
+		padding-left: 30px;
+		padding-top: 30px;
+		margin-bottom: 0;
+	}
+	@include mobile3 {
+		text-align: center;
+		font-size: 1.2em;
+		padding-top: 15px;
+	}
+	@include desktop {
+		text-align: left;
+		padding-left: 40px;
+	}
+}
+
+.number {
+	@include mobile {
+		color: $grey;
+		display: inline-block;
+		margin-top: 5px;
+		text-align: left;
+		font-weight: normal;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	@include mobile3 {
+		text-align: center;
+		font-size: 2em;
+	}
+	@include desktop {
+		text-align: left;
+	}
+}
+
+
+
+/***************
+MEMBERS AND ACTIVITY DIV
+***************/
+
+table a {
+	@include mobile {
+		color: $violet;
+		font-size: 0.8em;
+	}
+	@include mobile3 {
+		font-size: 1em;	
+	}
+}
+
+.member_name,
+.activity_time,
+td {
+	@include mobile {
+		font-size: 0.9em;
+	}
+	@include mobile3 {
+		font-size: 1em;
+	}
+}
+
+.arrow {
+	font-size: 2em;
+	color: $violet;
+}
+
+
+
+/***************
+FORM DIV AND SETTING
+***************/
+
+legend {
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+p.setting {
+	@include mobile {
+		padding: 20px 0 10px 20px;
+		margin: 0;
+	}
+	@include tablet {
+		padding-bottom: 0px;
+	}
+}
+
+.error_span {
+	@include mobile {
+		font-size: 0.9em;
+		position: relative;
+		top: 10px;
+	}
+	@include mobile3 {
+		font-size: 1em;
+	}
+}
+
+
+
+
+

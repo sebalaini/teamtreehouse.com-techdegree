@@ -1,0 +1,57 @@
+/***************
+HEADER
+***************/
+
+header {
+  padding-top: 10px;
+}
+
+
+
+/***************
+NAV
+***************/
+
+.main-nav {
+
+  ul {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start
+}
+
+  li {
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: flex-start;
+    width: 100px;
+}
+
+  a {
+    display: flex;
+    align-items: center;
+}
+
+}
+
+li:first-child {
+  width: 80px;
+}
+
+#nav_heart,
+#nav_location,
+#nav_contact {
+  height: 14px;
+  width: 15px;
+  padding-right: 5%;
+}
+
+
+

@@ -1,0 +1,85 @@
+/***************
+FOOTER
+***************/
+
+#foot {
+  clear: both;
+  padding: $primary_space;
+  margin: $primary_space;
+}
+
+.foot-name {
+	display: block;
+  float: left;
+  margin-top: $secondary_space;
+}
+
+.top a {
+  display: flex;
+  justify-content: flex-end;
+  padding: $primary_space;
+  margin: $primary_space;
+  margin-top: -2px;
+}
+
+
+%prim_pad {
+  padding: $primary_space * 2;
+}
+
+.phone a {
+  @extend %prim_pad;
+}
+
+.mail a {
+  @extend %prim_pad;
+}
+
+.foot-nav {
+  display: none;
+}
+
+
+@include tablet {
+
+footer {
+  border-top: 2px solid $grey;
+}
+
+.foot-nav {
+	display: flex;
+  justify-content: flex-end;
+  padding: $primary_space;
+  margin: $primary_space;
+  margin-top: $secondary_space;
+}
+
+.foot-nav {
+
+  li {
+    margin: $primary_space * 3;
+} 
+  a {
+    padding: $primary_space * 2;
+}
+
+}
+
+.top {
+	display: none;
+}
+
+#contact {
+  padding-bottom: $secondary_space;
+}
+
+}
+
+
+@include desktop {
+
+footer {
+  border-top: hidden;
+}
+
+}

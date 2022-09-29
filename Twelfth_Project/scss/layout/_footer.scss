@@ -1,0 +1,77 @@
+/***************
+FOOTER
+***************/
+
+footer {
+	@include mobile {
+		padding-top: 35px;
+		background: #fff;
+	}
+	@include desktop {
+		padding-top: 0;
+		background:#26292e;
+		color: #fff;
+	}
+}
+
+#contact  {
+	h2 {
+ 		margin: 40px auto;
+	}
+	p {
+		margin-top: 30px;
+	}
+}
+
+.cont_photo {
+	@include mobile {
+		max-width: 1200px;
+		height: 300px;
+		background: url("../img/cont_small.jpg") center no-repeat;
+		margin-bottom: 25px;
+	}
+	@include desktop {
+		height: 400px;
+		background: url("../img/cont_big.jpg") center no-repeat;
+		margin-bottom: 40px;
+	}
+}
+
+
+#social_logos {
+	text-align: center;
+	padding-left: 0;
+	margin-bottom: 40px;
+}
+
+#social_logos li {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	margin-top: 20px;
+}
+
+.phone,
+.mail {
+	margin-right: 10px;
+}
+
+.foot_copy {
+	text-align: center;
+	margin-top: 25px;
+}
+
+svg {
+	@include mobile {
+		fill: #26292e;
+	}
+	@include desktop {
+		fill: #fff;
+	}
+}
+
+
+
+
+

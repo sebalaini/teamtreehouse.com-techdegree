@@ -1,0 +1,108 @@
+/***************
+GENERAL
+***************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: $grey;
+}
+
+main {
+  @include tablet {
+    padding-top: 20px;
+  }
+}
+
+main p {
+  @include tablet {
+    line-height: 1.6em;
+  }
+}
+
+p,
+legend,
+caption,
+td,
+th,
+label {
+  color: $blue;
+}
+
+p.heading,
+h2 {
+  color: $red;
+}
+
+h2 {
+  @include mobile {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+/***************
+LINK
+***************/
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+a:hover,
+a:focus {
+  color: $red;
+}
+
+
+
+/***************
+SECTION STYLE
+***************/
+
+legend {
+  @include mobile {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: $red;
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+

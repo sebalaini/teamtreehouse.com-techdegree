@@ -1,0 +1,237 @@
+/***************
+GENERAL
+***************/
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+
+
+/***************
+LINK
+***************/
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+
+a.selected {
+  color: #fff;
+}
+
+.nav a:hover {
+  color: white
+}
+
+
+
+/***************
+NAV
+***************/
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  color: white;
+}
+
+.nav li {
+  padding: 10px;
+}
+
+li.name {
+  padding: 10px 0;
+}
+
+
+
+/***************
+HEADER
+***************/
+
+.header_a {
+  background: url('../images/asturia.jpg') no-repeat top center ;
+}
+
+.header_b {
+  background: url('../images/buitrago.jpg') no-repeat top center ;
+}
+
+.header_c {
+  background: url('../images/neila.jpg')no-repeat top center ;
+}
+
+.header {
+  font-family: 'Pacifico' ,sans-serif;
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: all .5s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.5) rotate(8deg);
+}
+
+.tag {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  display: table;
+  margin: 10px auto;
+  width: 80%;
+} 
+
+.location {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  width: 80%;
+}
+
+
+
+/***************
+BODY
+***************/
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  background: #fff;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+
+
+/***************
+FOOTER
+***************/
+
+.foot {
+  clear: both;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px 20px 0px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .6;
+  transition: all .5s;
+}
+
+a.linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+a.twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+a.github {
+  background-image: url(../images/github.svg);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+/***************
+CONTACT
+***************/
+
+.mail {
+  color: blue;
+}
+
+
+
+
+

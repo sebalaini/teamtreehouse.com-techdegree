@@ -1,0 +1,162 @@
+/***************
+ABOUT
+***************/
+
+#about {
+	@include mobile {
+		background: white;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	@include desktop {
+		background: #26292e;
+	}
+}
+
+#about p {
+	@include mobile {
+		max-width: 400px;
+	}
+	@include tablet {
+		max-width: 500px;
+	}
+}
+
+.column1,
+.column2 {
+	@include desktop {
+		width: 47%;
+		height: 480px;
+		background: #26292e;
+		color: #fff;
+		float: left;
+		margin: 1.5%;
+	}
+}
+
+
+
+/***************
+PORTFOLIO
+***************/
+
+.portfolio_div {
+	background: $dark_blue;
+	color: $white;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.gallery {
+	@include mobile {
+		padding: 0;
+		margin: 0;
+	}
+	@include tablet {
+		margin-left: 20px;
+	}
+	@include desktop {
+		margin-left: 0;
+	}
+}
+
+.gallery li {
+	@include mobile {
+		height: 600px;
+		width: 98%;
+	 	margin: 5px auto;
+	 	text-align: center;
+	}
+	@include tablet {
+		height: 680px;
+		width: 45%;
+		display: inline-block;
+		margin: 11px;
+		float: left;
+	}
+	@include desktop {
+		width: 31%;
+		height: 400px;
+	}
+}
+
+.gallery li:last-child {
+	@include mobile {
+		margin-bottom: 20px;
+	}
+	@include tablet {
+		margin-bottom: 80px;
+	}
+}
+
+.gallery li:hover .description {
+	@include desktop {
+		opacity: 1;
+		transition: opacity .7s ease-out;
+		-webkit-transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+	}
+}
+
+.gallery h2 {
+	margin-bottom: 20px;
+	margin-top: 30px;
+	color: $white;
+	font-size: 1.1em;
+}
+
+img.project {
+	clear: both;
+	width: 290px;
+	height: 310px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.description {
+	@include mobile {
+		width: 100%;
+	}
+	@include tablet {
+		width: 320px;
+	}
+	@include desktop {
+		opacity: 0;
+		position: relative;
+		top: -329px;
+		width: 290px;
+		height: 310px;
+		padding-top: 20px;
+		border-radius: 9.5px;
+		padding-bottom: 20px;
+		background:rgba(0,0,0,0.85);
+		font-size: 0.85em;
+	}
+}
+
+.desc_p {
+	@include mobile {
+		color: $white;
+		width: 310px;
+		margin: 0 auto;
+	  font-weight: normal;
+	}
+	@include tablet {
+		height: 170px;
+		margin-bottom: 10px;
+	}
+	@include desktop {
+		width: 290px;
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+/***************
+NAV
+***************/
+
+#fixed_nav {
+	@include mobile {
+		max-width: 1200px;
+		height: 50px;
+		margin: 0 auto;
+		margin-top: -5px;
+		background: $dark_blue;
+		position: fixed;
+		top: 0;
+		border-bottom: 2px solid $white;
+		z-index: 100;
+	}
+	@include tablet {
+		display: none;
+	}
+}
+
+.nav {
+	@include mobile {
+		display: none;
+		width: 100%;
+		max-width: 1200px;;
+		z-index: 100;
+	 	margin: 0 auto;
+	 	margin-top: 45px;
+	 	padding-left: 0;
+	 	position: fixed;
+	 	top: 0;
+		background: $dark_blue;
+		border-bottom: 2px solid $white;
+	}
+	@include tablet {
+		display: inline-block;
+		height: 50px;
+		left: 0;
+		right: 0;
+		margin-top: -5px;
+		background: $dark_blue;
+		text-align: right;
+	}
+}
+
+.nav a {
+	color: $white;
+}
+
+.nav ul {
+ 	list-style: none;
+}
+
+.nav li {
+	@include mobile{
+		width: 100%;
+	}
+	@include tablet {
+		display: inline-block;
+		width: 130px;
+	}
+}
+
+.nav li a {
+	display: block;
+	padding: 10px;
+	margin: 5px auto;
+}
+
+.nav a.selected {
+  color: $lighter_blue;
+}
+
+
+
+/***************
+HEADER
+***************/
+
+.header {
+  margin-top: -5px;
+}
+
+h1 {
+	@include mobile {
+		font-family: "Gloria Hallelujah", sans-serif;
+ 		font-size: 2em;
+	}
+	@include tablet {
+		font-size: 3em;
+	}
+}
+
+header p {
+	@include mobile {
+  color: $white;
+  font-size: 0.9em;
+  margin-top: -30px;
+	}
+	@include tablet {
+		font-size: 1em;
+	}
+}
+
+#name_div {
+	@include mobile {
+		padding-top: 50px;
+		height: 550px;
+	}
+	@include tablet {
+		height: 820px;
+	}
+}
+
+#name {
+	@include mobile {
+		position: relative;
+		margin-top: -240px;
+		color: #fff;
+	}
+	@include tablet {
+		margin-top: -770px;
+	}
+}
+
+#pic_photo {
+	@include mobile {
+		width: 100%;
+		height: 500px;
+		margin-top: 30px;
+		background: url("../img/profile_photo_small.jpg") center no-repeat;
+	}
+	@include tablet {
+		height: 600px;
+		margin-top: 150px;
+	}
+}
+
+
+
+
+

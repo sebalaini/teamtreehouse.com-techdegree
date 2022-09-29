@@ -1,0 +1,17 @@
+/***************
+EXTENDS
+***************/
+
+.hover {
+	border: 2px solid $violet;
+}
+
+.focus {
+	background-color: $violet;
+	color: $white;
+}
+
+.border10 {
+	border-radius: 10px;
+	border: 2px solid $light_grey;
+}
